@@ -9,7 +9,7 @@ Focal oncogene amplification and rearrangements drive tumor growth and evolution
 3. Installation
 4. Usage
 5. File formats
-6. Checkpointing and modularity
+6. Checkpointing and modular integration with other tools
 
 ## Quickstart:
 ### Installation:
@@ -311,10 +311,10 @@ This file provides the list of discordant edges in the amplicon. If this file is
     * Homology/InsertionSequence: Sequence of the homologous sequence or insertion at the breakpoint. If split reads are not found, this column is set to `None`. If the size is `0`, then this column is empty.
 
 
-## Checkpointing and modularity:
-The user may force AA to use existing data in order to recalculate information from previous runs or use data from external sources. Here are instructions for using prior data at various stages:
+## Checkpointing and modular integration with other tools:
+The user may force AA to use existing data in order to recalculate information from previous runs or use data from external tools. 
+Here are instructions for using prior or external data at various stages:
 1. Interval selection: The user may select intervals from each amplicon and provide them in a separate BED file. The user may then run AA separately with each amplicon (bed file) using the option `--extendmode CLUSTERED` to indicate that AA should use all intervals within the provided as a single amplicon).
-2. Copy number segmentation: The user may provide the copy number segmentation file as described in the File format section 5.
-3. Unrefined discordant edges: The user may provide the discordant edges in a file as described in the File format section 6.
-4. Refined discordant edges: The user may provide the discordant edges in a file as described in the File format section 7.
-
+2. Copy number segmentation: The user place the copy number segmentation file in the output directory in format described in File format section 5.
+3. Unrefined discordant edges: The user may place the unrefined edges file in the output directory in format described in the File format section 6.
+4. Refined discordant edges: The user may place the refined edges file in the output directory in format described in the File format section 7.
