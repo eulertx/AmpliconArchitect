@@ -315,6 +315,6 @@ This file provides the list of discordant edges in the amplicon. If this file is
 The user may force AA to use existing data in order to recalculate information from previous runs or use data from external tools. 
 Here are instructions for using prior or external data at various stages:
 1. Interval selection: The user may select intervals from each amplicon and provide them in a separate BED file. The user may then run AA separately with each amplicon (bed file) using the option `--extendmode CLUSTERED` to indicate that AA should use all intervals within the provided as a single amplicon).
-2. Copy number segmentation: The user place the copy number segmentation file in the output directory in format described in File format section 5.
+2. Copy number segmentation: The user may place the copy number segmentation file in the output directory in format described in File format section 5.
 3. Unrefined discordant edges: The user may place the unrefined edges file in the output directory in format described in the File format section 6.
 4. Refined discordant edges: The user may place the refined edges file in the output directory in format described in the File format section 7.
